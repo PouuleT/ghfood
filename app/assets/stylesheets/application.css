@@ -11,3 +11,7 @@
  *= require_self
  *= require_tree .
  */
+
+.caption h3 {
+  font-size: 16px;
+}
