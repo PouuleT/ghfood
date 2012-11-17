@@ -1,42 +1,48 @@
-.span2.offset3
-  = text_field_tag "coucou"
+.offset3
+  %img.margin-down.img-rounded{:src => "/img/main_icon.png"}
+
+.offset4.input-append
+  %input#appendedInputButton{:type => "text", :placeholder => "Cherchez une recette!", :width => "500px"}
+  %button.btn.input-append{:type => "button"}
+    %i.icon-search
+
+.margin-down
 
 %ul.thumbnails
-  %li.span3
+  %li.span4
     .thumbnail
       = link_to (image_tag "/img/bolo.jpg"), bolo_path
     .caption
       %h3 Spaghettis à la bolognaise
       %p Une recette classique mais délicieuse, rapide et peu onéreuse idéale pour toutes les faims.
-  %li.span3
+  %li.span4
     .thumbnail 
       = link_to (image_tag "/img/carbo.jpg"), bolo_path
     .caption 
       %h3 Spaghettis à la carbonara
       %p Des pâtes, des pâtes, oui mais des panzannis !
-  %li.span3
+  %li.span4
     .thumbnail 
       = link_to (image_tag "/img/bolo.jpg"), bolo_path
     .caption
       %h3 Spaghettis à la bolognaise
       %p Des pâtes, du fromage, des champignons, un plein de douceur pour votre palais.
-  %li.span3
+%ul.thumbnails
+  %li.span4
     .thumbnail 
       = link_to (image_tag "/img/bolo.jpg"), bolo_path
     .caption
       %h3 Spaghettis à la bolognaise
       %p Des pâtes, du fromage, des champignons, un plein de douceur pour votre palais.
-  %li.span3
+  %li.span4
     .thumbnail 
       = link_to (image_tag "/img/bolo.jpg"), bolo_path
     .caption
       %h3 Spaghettis à la bolognaise
       %p Des pâtes, du fromage, des champignons, un plein de douceur pour votre palais.
-  %li.span3
+  %li.span4
     .thumbnail 
       = link_to (image_tag "/img/bolo.jpg"), bolo_path
     .caption
       %h3 Spaghettis à la bolognaise
       %p Des pâtes, du fromage, des champignons, un plein de douceur pour votre palais.
-
-

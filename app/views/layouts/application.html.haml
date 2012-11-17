@@ -34,10 +34,9 @@
 
     .container
       .content
-        .row
-          .span10.offset1
-            = bootstrap_flash
-            = yield
+        .main-content
+          = bootstrap_flash
+          = yield
     
       %footer
         -# %p &copy; Company 2012
