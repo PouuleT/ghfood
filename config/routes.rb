@@ -1,2 +1,3 @@
-Ghfood::Application.routes.draw do
+Ghfood::Application.routes.draw do 
+  root :to => "application#index"
 end
