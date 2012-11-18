@@ -7,13 +7,25 @@
  *
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
- *
  *= require_self
  *= require_tree .
  */
 
 .caption h3 {
   font-size: 16px;
+}
+
+.circle {
+  position:relative;
+  float:left;
+  right: 65px;
+  top: 25px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background-color: #3B5998;
+  border: 5px solid white;
+  /* width and height can be anything, as long as they're equal */
 }
 
 #actions {
@@ -27,6 +39,14 @@
   font-weight: bold;
 }
 
+.li-none{
+  list-style-type: none;
+  border-radius: 5px;
+  border: none;
+  float: left;
+  width: 43%;
+}
+
 #tl {
   background-color: #3B5998;
   background-repeat:repeat-y;
@@ -38,6 +58,14 @@
   margin-bottom: 50px;
 }
 
+#arrow {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 25px;
+  height: 25px;
+}
+
 #steps {
   margin-left: 50px;
 }
@@ -45,7 +73,6 @@
 #steps li {
   position:relative;
   list-style-type: none;
-  margin-top: 20px;
   margin-bottom: 20px;
   padding-bottom : 20px;
   border: 1px solid #DDE2ED;
@@ -66,10 +93,22 @@
 }
 
 #steps li h3 hr {
-	border: solid 1px #DDE2ED;
-	margin-right: 20px;
+  border: solid 1px #DDE2ED;
+  margin-right: 20px;
 }
 
 #steps li img {
   vertical-align:top;
+}
+
+.button {
+  text-align: center;
+  vertical-align: center;
+  font-size: 54pt;
+  padding-top: 30px;
+}
+
+#iphone:hover {
+  background-color: lightgrey;
+  box-shadow: 3px 3px 4px black;
 }

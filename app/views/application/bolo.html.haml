@@ -33,9 +33,10 @@
 #tl
 
 %ul#steps
-  %li 
+  %li.li-height
+    .circle
     %h3
-      Faites cuire la carotte !
+      Faitez cuire la carotte !
       %hr
     %br
     %iframe{:width => "420", :height => "315", "src" => "http://www.youtube.com/embed/_uBafUuSX9M", "frameborder" => "0", "allowfullscreen" => "true"}
@@ -43,12 +44,19 @@
     %button.btn.btn-primary
       Étape suivante
       %span.caret
-  - ['Faites rôtir la viande hachée','Ajoutez la sauce tomate',"Versez l'huile et laissez migoter","Faire bouillir de l'eau","Mettez les pâtes dans l'eau bouillante",'ites rôtir la viande hachée','Ajoutez la sauce tomate',"Versez l'huile et laissez migoter","Faire bouillir de l'eau","Mettez les pâtes dans l'eau bouillante"].each do |inst|
-    %li 
+  - ['Faites rôtir la viande hachée','Ajoutez la sauce tomate',"Versez l'huile et laissez migoter","Faire bouillir de l'eau","Mettez les pâtes dans l'eau bouillante",'Faites rôtir la viande hachée','Ajoutez la sauce tomate',"Versez l'huile et laissez migoter","Faire bouillir de l'eau","Mettez les pâtes dans l'eau bouillante"].each do |inst|
+    %li.li-height 
+      .circle
       %h3
         = inst
         %hr
       %button.btn.btn-primary
         Étape suivante
-        %span.caret
+        %span.caret66
 
+  %li.li-height
+    %ul
+      %li.li-none
+        Ici il reste à convaincre l'utilisateur de cliquer sur le GROS bouton d'à côté
+      %li.li-none#iphone
+        GO!
