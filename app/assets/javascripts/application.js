@@ -12,5 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require scrollTo-min
 //= require twitter/bootstrap
 //= require_tree .
+//
+//
+$("button#go").click(function(event) {
+  $("body,html").animate({scrollTop : $("#tl").offset().top - 80}, 800);
+});
