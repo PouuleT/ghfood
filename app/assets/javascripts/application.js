@@ -20,3 +20,35 @@
 $("button#go").click(function(event) {
   $("body,html").animate({scrollTop : $("#tl").offset().top - 80}, 800);
 });
+
+$(document).ready(function(event) {
+	$("#tl").mouseover(function(){
+		$(document).mousemove(function(e){
+      if(e.pageX<100 && e.pageX>25) {
+      	$('#arrow').css("left", 78);
+      	$('#arrow').css("top", e.pageY-50);
+      }
+  	});
+		$(document).click(function(e){
+ 			alert("On transmet les coordonnées : "+e.pageY);
+  	});
+ 	});
+
+	$(".circle").mouseover(function(){
+		//$(document).mousemove(function(e){
+      //if(e.pageX<100 && e.pageX>25 && e.pageY>200 && e.pageY>250) {
+      	$('.circle').css("border", "5px solid #a5a7ff");
+      	//$('#arrow').css("top", e.pageY-50);
+      //}
+  	//});
+ 	});
+	$(".circle").mouseout(function(){
+		//$(document).mousemove(function(e){
+      //if(e.pageX<100 && e.pageX>25 && e.pageY>200 && e.pageY>250) {
+      	$('.circle').css("border", "5px solid white");
+      	//$('#arrow').css("top", e.pageY-50);
+      //}
+  	//});
+ 	});
+});
+//#a5a7ff

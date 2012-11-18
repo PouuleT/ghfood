@@ -16,6 +16,18 @@
   font-size: 16px;
 }
 
+.circle {
+  position: absolute;
+  height: 500px;
+  left: 50px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background-color: #a5a7ff;
+  border: 5px solid white;
+  /* width and height can be anything, as long as they're equal */
+}
+
 #actions {
   margin-top: 20px;
 }
@@ -31,10 +43,18 @@
   background-image: url("/img/bar.png");
   background-repeat:repeat-y;
   height: 1000px;
-  width: 10px;
+  width: 50px;
   float: left;
 }
 
 .margin-down {
   margin-bottom: 50px;
+}
+
+#arrow {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 25px;
+  height: 25px;
 }
