@@ -36,10 +36,16 @@
       Étape suivante
       %span.caret
   - ['Faites rôtir la viande hachée','Ajoutez la sauce tomate',"Versez l'huile et laissez migoter","Faire bouillir de l'eau","Mettez les pâtes dans l'eau bouillante",'ites rôtir la viande hachée','Ajoutez la sauce tomate',"Versez l'huile et laissez migoter","Faire bouillir de l'eau","Mettez les pâtes dans l'eau bouillante"].each do |inst|
-    %li 
+    %li.li-height 
       .circle
       = inst
       %button.btn.btn-primary
         Étape suivante
         %span.caret
 
+  %li.li-height
+    %ul
+      %li.li-none
+        Ici il reste à convaincre l'utilisateur de cliquer sur le GROS bouton d'à côté
+      %li.li-none.button#iphone
+        GO!
