@@ -1,10 +1,10 @@
 #logo.span4.offset1
   =image_tag "/img/onafaim-logo-256.png"
 #photo.span6
-  =image_tag "/img/bolo.jpg"
+  =image_tag "/img/bolo.jpg", :class => "img-polaroid"
 
 .row
-  #ingredients.span5.offset2
+  #ingredients.span2.offset1
     %p Pour 120 personnes :
     %ul
       %li=link_to "30kg de spaghettis"
@@ -12,8 +12,15 @@
       %li=link_to "10kg de sauce tomate"
       %li=link_to "1l d'huile de palme"
       %li=link_to "1 carotte"
+  #nutritional.span2
+    %p Valeurs nutritionnelles
+    %ul
+      %li Nombre de calorie : 69122
+      %li Prix : 126.20€
+      %li Temps : 8h
+      
 
-  #actions.span5
+  #actions.span5.offset1
     %button.btn.btn-primary#go
       EN CUISINE !
       %span.caret
@@ -27,16 +34,20 @@
 
 %ul#steps
   %li 
-    Faitez cuire la carotte !
+    %h3
+      Faites cuire la carotte !
+      %hr
     %br
     %iframe{:width => "420", :height => "315", "src" => "http://www.youtube.com/embed/_uBafUuSX9M", "frameborder" => "0", "allowfullscreen" => "true"}
-    =image_tag "/img/carotte.jpg"
+    =image_tag "/img/carotte.jpg", :class => "img-polaroid img-rounded"
     %button.btn.btn-primary
       Étape suivante
       %span.caret
   - ['Faites rôtir la viande hachée','Ajoutez la sauce tomate',"Versez l'huile et laissez migoter","Faire bouillir de l'eau","Mettez les pâtes dans l'eau bouillante",'ites rôtir la viande hachée','Ajoutez la sauce tomate',"Versez l'huile et laissez migoter","Faire bouillir de l'eau","Mettez les pâtes dans l'eau bouillante"].each do |inst|
     %li 
-      = inst
+      %h3
+        = inst
+        %hr
       %button.btn.btn-primary
         Étape suivante
         %span.caret
