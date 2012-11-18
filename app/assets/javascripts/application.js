@@ -44,9 +44,9 @@ $(document).ready(function(event) {
 	$(".circle").mouseout(function(){
       	$('.circle').css("border", "5px solid white");
  	});
-});
 
-$("#tl").css("height", $(document).height()-$(window).height()+200);
+  $("#tl").css("height", $(document).height()-$(window).height()-100);
+});
 
 $("#steps li button").each(function() {
   $(this).css("top", $(window).height()-200);
@@ -64,4 +64,8 @@ $(".li-none").each(function() {
 $("#iphone").click(function() {
 	window.location = "someLink://yourApp/form_Submitted:param1:param2:param3";
 	return true;
+});
+
+$("a.up-left,a.up-right").click(function() {
+  $("body,html").animate({scrollTop : $("#logo").offset().top - 80}, 800);
 });

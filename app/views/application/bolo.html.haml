@@ -27,9 +27,6 @@
         EN CUISINE !
         %br
         %span.caret
-    .span2
-      %button.btn.btn-success.btn-large
-        AMÉLIORER LA RECETTE
 
 %hr 
 #tl
@@ -56,9 +53,14 @@
         Étape suivante
         %span.caret
 
-%a.btn.btn-large.btn-block.btn-primary.big-button{:href=>"#"}
-  .pwet{:style=>"font-size: 48px;"}
+
+
+=link_to (image_tag "/img/up.png", :width => "50px"), "#" , :class => "up-left"
+
+%a#iphone.btn.btn-large.btn-block.btn-success.big-button.span3.offset4{:href=>"#"}
+  .pwet
     %i.icon-search.icon-white.icon-camera{:height => "40px", :width => "40px"}
-    Take a picture of your meal and Share it!
-%br
-%br
+    Prendre une photo du plat et la partager !
+
+=link_to (image_tag "/img/up.png", :width => "50px"), "#" , :class => "up-right"
+
