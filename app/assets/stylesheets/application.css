@@ -31,10 +31,6 @@ p {
   /* width and height can be anything, as long as they're equal */
 }
 
-#actions {
-  margin-top: 20px;
-}
-
 #actions p{
   margin-top: 10px;
   margin-left: 50px;
@@ -120,5 +116,26 @@ p {
   height: 100px;
   margin: 20px;
   border-bottom: 100px;
+  font-size: 40px;
+}
+
+a.btn-large {
+  padding-top:20px;
+}
+
+#photo {
+  margin-bottom: 40px;
+}
+
+.header {
+  text-align: center;
+}
+
+#actions button {
+  margin-top:20px;
+  margin-left:50px;
+}
+
+h1.span3.offset1 {
   font-size: 40px;
 }

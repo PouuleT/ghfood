@@ -3,40 +3,42 @@
 #photo.span6
   =image_tag "/img/bolo.jpg", :class => "img-polaroid"
 
-.row
-  #ingredients.span2.offset1
-    %p Pour 120 personnes :
-    %ul
-      %li=link_to "30kg de spaghettis"
-      %li=link_to "10kg de viande haché"
-      %li=link_to "10kg de sauce tomate"
-      %li=link_to "1l d'huile de palme"
-      %li=link_to "1 carotte"
-  #nutritional.span2
-    %p Valeurs nutritionnelles
-    %ul
-      %li Nombre de calorie : 69122
-      %li Prix : 126.20€
-      %li Temps : 8h
-      
+%h1.span3.offset1 Spaghettis à la bolognaise
 
-  #actions.span5.offset1
-    %button.btn.btn-primary#go
-      EN CUISINE !
-      %span.caret
-    %p &amp;
-    %button.btn.btn-primary
-      AMÉLIORE LA RECETTE
+#ingredients.span3.offset1
+  %p Pour 120 personnes :
+  %ul
+    %li=link_to "30kg de spaghettis"
+    %li=link_to "10kg de viande haché"
+    %li=link_to "10kg de sauce tomate"
+    %li=link_to "1l d'huile de palme"
+    %li=link_to "1 carotte"
+#nutritional.span2
+  %p Valeurs nutritionnelles :
+  %ul
+    %li Nombre de calories : 576 kcal/prs
+    %li Prix : 126.20€
+    %li Temps : 8h
+      
+.row
+  #actions
+    .span3.offset5
+      %button.btn.btn-primary.btn-large#go
+        EN CUISINE !
+        %br
+        %span.caret
+    .span2
+      %button.btn.btn-success.btn-large
+        AMÉLIORER LA RECETTE
 
 %hr 
-
 #tl
 
 %ul#steps
   %li.li-height
     .circle
     %h3
-      Faitez cuire la carotte !
+      Faites cuire la carotte !
       %hr
     %br
     %iframe{:width => "420", :height => "315", "src" => "http://www.youtube.com/embed/_uBafUuSX9M", "frameborder" => "0", "allowfullscreen" => "true"}
@@ -44,7 +46,7 @@
     %button.btn.btn-primary
       Étape suivante
       %span.caret
-  - ['Faites rôtir la viande hachée','Ajoutez la sauce tomate',"Versez l'huile et laissez migoter","Faire bouillir de l'eau","Mettez les pâtes dans l'eau bouillante",'Faites rôtir la viande hachée','Ajoutez la sauce tomate',"Versez l'huile et laissez migoter","Faire bouillir de l'eau","Mettez les pâtes dans l'eau bouillante"].each do |inst|
+  - ['Faites rôtir la viande hachée','Ajoutez la sauce tomate',"Versez l'huile et laissez migoter","Faire bouillir de l'eau","Mettez les pâtes dans l'eau bouillante"].each do |inst|
     %li.li-height 
       .circle
       %h3
@@ -52,14 +54,7 @@
         %hr
       %button.btn.btn-primary
         Étape suivante
-        %span.caret66
-
--#  %li.li-height
--#    %ul
--#      %li.li-none
--#        Ici il reste à convaincre l'utilisateur de cliquer sur le GROS bouton d'à côté
--#      %li.li-none#iphone
--#        GO!
+        %span.caret
 
 %a.btn.btn-large.btn-block.btn-primary.big-button{:href=>"#"}
   .pwet{:style=>"font-size: 48px;"}
