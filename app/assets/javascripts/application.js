@@ -20,3 +20,16 @@
 $("button#go").click(function(event) {
   $("body,html").animate({scrollTop : $("#tl").offset().top - 80}, 800);
 });
+
+$("#steps li").each(function() {
+  $(this).css("height", $(window).height()-170);
+});
+
+$("#tl").css("height", $(document).height()-$(window).height()+200);
+
+$("#steps li button").each(function() {
+  $(this).css("top", $(window).height()-200);
+  $(this).click(function(event) {
+    $("body,html").animate({scrollTop : $(this).offset().top}, 800);
+  });
+});
