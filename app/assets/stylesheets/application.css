@@ -7,7 +7,6 @@
  *
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
- *
  *= require_self
  *= require_tree .
  */
@@ -19,11 +18,11 @@
 .circle {
   position: absolute;
   height: 500px;
-  left: 50px;
+  left: 77px;
   border-radius: 50%;
   width: 25px;
   height: 25px;
-  background-color: #a5a7ff;
+  background-color: #3B5998;
   border: 5px solid white;
   /* width and height can be anything, as long as they're equal */
 }
@@ -40,10 +39,9 @@
 }
 
 #tl {
-  background-image: url("/img/bar.png");
+  background-color: #3B5998;
   background-repeat:repeat-y;
-  height: 1000px;
-  width: 50px;
+  width: 10px;
   float: left;
 }
 
@@ -57,4 +55,25 @@
   left: 0px;
   width: 25px;
   height: 25px;
+}
+
+#steps li {
+  list-style-type: none;
+  border-radius: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom : 20px;
+  padding-left : 20px;
+  border: 1px solid;
+}
+
+#steps {
+  margin-left: 50px;
+}
+
+#steps li button {
+  float:right;
+  position: relative;
+  right : 20px;
 }
